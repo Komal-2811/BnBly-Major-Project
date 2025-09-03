@@ -1,5 +1,5 @@
 {
-  "engines":{
+  "engines": {
     "node": "22.14.0"
   },
   "name": "airbnb(p1)",
@@ -13,6 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@heroui/react": "^2.8.3",
     "cloudinary": "^1.41.3",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^5.1.0",
