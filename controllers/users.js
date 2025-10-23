@@ -14,7 +14,7 @@ module.exports.signup=async (req, res) => {
             if (err) {
                 return next(err);
             }
-            req.flash("success", "Welcome to UrbanRetreats");
+            req.flash("success", "Welcome to BnBly");
             res.redirect("/listings");
         })
 
@@ -30,7 +30,7 @@ module.exports.renderLoginForm=(req, res) => {
 };
 
 module.exports.login=async (req, res) => {
-        req.flash("success", "Welcome back to UrbanRetreats! you are successfully logged in")
+        req.flash("success", "Welcome back to BnBly! you are successfully logged in")
         let redirecturl=res.locals.redirecturl||"/listings";
         res.redirect(redirecturl);
 };

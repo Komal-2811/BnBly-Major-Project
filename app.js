@@ -102,6 +102,9 @@ app.use("/listings", listingRouter);
 //for reviwes only this single line
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
+app.get("/", (req, res) => {
+    res.redirect("/listings");
+});
 
 //mw
 app.use((err, req, res, next) => {
